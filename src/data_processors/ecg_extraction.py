@@ -79,8 +79,6 @@ def extract_category_from_dump_duke(file_path, json_data=None):
     """
     Extract category for dump_duke from JSON if present, otherwise from parent folder.
     """
-    if isinstance(json_data, dict) and "category" in json_data:
-        return str(json_data["category"])
 
     return get_parent_folder_name(file_path)
 
