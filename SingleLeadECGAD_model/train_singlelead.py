@@ -11,9 +11,9 @@ from sklearn.metrics import roc_auc_score
 from torch.utils.data import DataLoader
 from tqdm import tqdm
 
-from utils import time_string, convert_secs2time, AverageMeter, generate_trend
-from model import AD_Class
-from dataloader import DataSet
+from utils_singlelead import time_string, convert_secs2time, AverageMeter, generate_trend
+from model_template.models.model_singlelead import AD_Class
+from dataloader_singlelead import DataSet
 from losses import AsymmetricLoss
 
 
